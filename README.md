@@ -12,11 +12,13 @@ pip install -e .
 
 ### Published site (GitHub Pages)
 
-After pushing to `main` on GitHub, enable **Pages** → branch **`gh-pages`** → `/ (root)`.
-
 URL: `https://<your-github-username>.github.io/Timeries/`
 
-Deploy runs automatically via [`.github/workflows/docs.yml`](.github/workflows/docs.yml).
+1. Push to **`main`** or **`master`** (workflow runs on both).
+2. Repo **Settings → Pages → Build and deployment → Source**: choose **GitHub Actions** (not “Deploy from a branch”).
+3. After the [docs workflow](.github/workflows/docs.yml) succeeds, open the Pages URL above.
+
+If you only see **README.md**, Pages is still serving the repo branch instead of the MkDocs build—switch the source to **GitHub Actions** and re-run the workflow (**Actions → Deploy docs to GitHub Pages → Run workflow**).
 
 ### Local docs (includes REST API)
 
@@ -42,6 +44,6 @@ git init
 git add .
 git commit -m "Initial commit"
 git remote add origin https://github.com/<your-username>/Timeries.git
-git branch -M main
-git push -u origin main
+git push -u origin master
+# or: git branch -M main && git push -u origin main
 ```
