@@ -1,0 +1,12 @@
+# Local docs only: includes REST API (Swagger iframe). Not used by GitHub Pages deploy.
+INHERIT: mkdocs.yml
+
+nav:
+  - Home: index.md
+  - User guide:
+      - Data processing: data-processing.md
+      - Data cleaning: data-cleaning.md
+      - EDA: eda.md
+      - Modeling: modeling.md
+  - Python API: api.md
+  - REST API: api-rest.md

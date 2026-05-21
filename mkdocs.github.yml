@@ -1,0 +1,5 @@
+# GitHub Pages deploy: excludes local-only REST API page.
+INHERIT: mkdocs.yml
+
+exclude_docs: |
+  api-rest.md

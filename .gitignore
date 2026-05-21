@@ -1,0 +1,16 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+site/
+site-local/
+mkdocs.ci.yml
+.cache/
+*.sqlite
+.DS_Store
+.idea/
+.vscode/

@@ -1,0 +1,47 @@
+site_name: Timeries
+site_description: Time series toolkit for meter data.
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: red
+      accent: #ba0c2f
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: #ba0c2f
+      accent: #ba0c2f
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+  - autorefs
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            members_order: source
+
+nav:
+  - Home: index.md
+  - User guide:
+      - Data processing: data-processing.md
+      - Data cleaning: data-cleaning.md
+      - EDA: eda.md
+      - Modeling: modeling.md
+  - Python API: api.md
+
+markdown_extensions:
+  - md_in_html
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - admonition

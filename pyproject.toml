@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "timeries"
+version = "0.1.0"
+description = "Time series toolkit for meter data: EDA, cleaning, ingestion, and forecasting."
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Timeries contributors" }]
+keywords = ["time-series", "forecasting", "energy", "prophet"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+  "hampel",
+  "matplotlib",
+  "neuralprophet",
+  "numpy",
+  "openmeteo-requests",
+  "pandas",
+  "prophet",
+  "pymannkendall",
+  "requests-cache",
+  "retry-requests",
+  "scikit-learn",
+  "scipy",
+  "seaborn",
+  "statsmodels",
+]
+
+[project.optional-dependencies]
+docs = [
+  "mkdocs-material>=9.5",
+  "mkdocstrings[python]>=0.24",
+  "mkdocs-autorefs>=1.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-org/timeries"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["timeries*"]
+
+[tool.setuptools.package-data]
+timeries = ["data/*.json"]
