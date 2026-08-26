@@ -19,6 +19,7 @@ flowchart LR
 2. **[Data cleaning](data-cleaning.md)** — detect and replace outliers.
 3. **[EDA](eda.md)** — plots, decomposition, trend and ACF analysis.
 4. **[Modeling](modeling.md)** — forecast with optional regressors and intervals.
+5. **[Chat assistant tools](mcp-tools.md)** — plain-language guide to the MCP tools used by the energy assistant.
 
 ## User guide
 
@@ -28,6 +29,8 @@ flowchart LR
 | `timeries.data_cleaning` | `DataCleaning` | [Data cleaning](data-cleaning.md) |
 | `timeries.eda` | `EDA` | [EDA](eda.md) |
 | `timeries.modeling` | `ModelingClass` | [Modeling](modeling.md) |
+
+The [Chat assistant tools](mcp-tools.md) page explains what non-technical users can ask the assistant to do with live meter data.
 
 ## Install
 

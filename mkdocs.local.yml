@@ -8,5 +8,6 @@ nav:
       - Data cleaning: data-cleaning.md
       - EDA: eda.md
       - Modeling: modeling.md
+      - Chat assistant tools: mcp-tools.md
   - Python API: api.md
   - REST API: api-rest.md
