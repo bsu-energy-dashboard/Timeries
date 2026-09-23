@@ -36,6 +36,7 @@ nav:
   - User guide:
       - Data processing: data-processing.md
       - Data cleaning: data-cleaning.md
+      - Robust Principal Component Analysis: rpca_readme.md
       - EDA: eda.md
       - Modeling: modeling.md
       - Chat assistant tools: mcp-tools.md
